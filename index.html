@@ -27,7 +27,7 @@
 		<span></span>
 		<ul>
 			<li><a href="">Tickets</a></li>
-			<li><a href="planjebezoek.html">Plan je bezoek</a></li>
+			<li><a href="">Plan je bezoek</a></li>
 			<li><a href="architectuur.html">Over Voorlinden</a></li>
 			<li><a href="">Shop</a></li>
 		</ul>
@@ -49,13 +49,56 @@
      <a href="">Meer info</a>
   </main> -->
 
-  <div id="bgslider">
-    <figure>
-        <img src="images/voorlinden_slides_1.jpeg" alt="Slider">
-        <img src="images/voorlinden_slides_2.jpeg" alt="Slider">
+  <div class="bgslider">
+		<div class="slideritems">
+			<img src="images/voorlinden_slides_1.jpeg" alt="Slider">
+				<div class="slidertekst">
+					<h2>Binnenkort: Picasso-Giacometti</h2>
+					<p>Vanaf 16 oktober</p>
+					<a href="">Meer info</a>
+					<button id="slider1Button" class="1"></button>
+        			<button id='slider2Button' class="2"></button>
+        			<button id="slider3Button" class="3"></button>
+				</div>
+			</div>
+			
+			<div class="slideritems">
+				<img src="images/voorlinden_slides_2.jpeg" alt="Slider">
+					<div class="slidertekst">
+						<h2>Listen to Your Eyes</h2>
+						<p>Nu te zien</p>
+						<a href="">Tickets</a>
+						<a href="">Meer info</a>
+						<button id="slider1Button" class="1"></button>
+        				<button id='slider2Button' class="2"></button>
+       					<button id="slider3Button" class="3"></button>
+					</div>
+				</div>
+
+				<div class="slideritems">
+					<img src="images/voorlinden_slides_3.jpeg" alt="Slider">
+						<div class="slidertekst">
+							<h2>Hightlights</h2>
+							<p>Nu te zien</p>
+							<a href="">Tickets</a>
+							<a href="">Meer info</a>
+							<button id="slider1Button" class="1"></button>
+        					<button id='slider2Button' class="2"></button>
+        					<button id="slider3Button" class="3"></button>
+						</div>
+					</div>
+	</div>
+
+
+
+<!--<img src="images/voorlinden_slides_2.jpeg" alt="Slider">
         <img src="images/voorlinden_slides_3.jpeg" alt="Slider">
-    </figure>
-</div>
+	</figure>
+	<div id="sliderbuttons">
+		<button id="slider1Button" class="1"></button>
+        <button id='slider2Button' class="2"></button>
+        <button id="slider3Button" class="3"></button>
+	</div>-->
     
 	<section>
   		<h2>Welkom</h2>
@@ -91,7 +134,7 @@
         <a href="">Bestel hier</a>
 	</section>
 
-	<article>
+	<section>
 		<h2>Schrijf je in voor de nieuwsbrief</h2>
   		<form action="/action_page.php">
     		<label for="voornaam"></label>
@@ -104,7 +147,7 @@
    			<input type="text" id="email" name="email" placeholder="E-mail*">
  		</form>
  		<a href="">Inschrijven</a>
-	</article>
+	</section>
 		
 	<section>
   		<a href="">Plan je bezoek</a>
@@ -120,9 +163,9 @@
 	<hr style="border: none;">
 	<h2>Contact</h2>
 	<address>Voorlinden museum & gardens
-Buurtweg 90
-2244 AG Wassenaar
-+31 (0)70 51 21 660
+	Buurtweg 90
+	2244 AG Wassenaar
+	+31 (0)70 51 21 660
 	info@voorlinden.nl</address>
 	<h2>Over ons</h2>
 	<p>Huisregels
