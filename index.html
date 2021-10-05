@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="nl">
-	
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="Fleur Admiraal">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<title>Museum Voorlinden</title>
-	
+
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 	<link rel="stylesheet" href="https://use.typekit.net/dmd4ltx.css">
@@ -17,172 +17,151 @@
 </head>
 
 <body>
-<header>
-    <img src="https://www.voorlinden.nl/wp-content/themes/voorlinden/images/logo.png" alt="logo">
-		
-	<nav>
-		<input type="checkbox" /> 
-		<span></span>
-		<span></span>
-		<span></span>
-		<ul>
-			<li><a href="">Tickets</a></li>
-			<li><a href="">Plan je bezoek</a></li>
-			<li><a href="architectuur.html">Over Voorlinden</a></li>
-			<li><a href="">Shop</a></li>
-		</ul>
-	</nav>
+	<header>
+		<img src="https://www.voorlinden.nl/wp-content/themes/voorlinden/images/logo.png" alt="logo">
+		<nav>
+			<input type="checkbox" />
+			<div class="hamburgermenu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="">Plan je bezoek</a></li>
+				<li><a href="architectuur.html">Over Voorlinden</a></li>
+				<li><a href="">Shop</a></li>
+				<li><button onclick="darkmodeOn()">Dark mode</button></li>
+			</ul>
+		</nav>
 
-	<!-- <p>Test</p> voor border hamburger menu -->
-
-    <!--<img src="https://www.voorlinden.nl/wp-content/uploads/Voorlinden_RobinRhode10-homepage.jpg" alt="afbeelding"> -->
-</header>
+	</header>
 
 
-<main>
+	<main>
 
- <!-- <main>
-     <img>
-     <h2>Robin Rhode</h2>
-     <p>Nu te zien</p>
-     <a href="">Tickets</a>
-     <a href="">Meer info</a>
-  </main> -->
-
-  <div class="bgslider">
-		<div class="slideritems">
-			<img src="images/voorlinden_slides_1.jpeg" alt="Slider">
+		<div class="bgslider">
+			<div class="slideritems">
+				<img src="images/voorlinden_slides_1.jpeg" alt="Slider1">
 				<div class="slidertekst">
 					<h2>Binnenkort: Picasso-Giacometti</h2>
 					<p>Vanaf 16 oktober</p>
 					<a href="">Meer info</a>
 					<button id="slider1Button" class="1"></button>
-        			<button id='slider2Button' class="2"></button>
-        			<button id="slider3Button" class="3"></button>
+					<button id='slider2Button' class="2"></button>
+					<button id="slider3Button" class="3"></button>
 				</div>
 			</div>
-			
+
 			<div class="slideritems">
-				<img src="images/voorlinden_slides_2.jpeg" alt="Slider">
-					<div class="slidertekst">
-						<h2>Listen to Your Eyes</h2>
-						<p>Nu te zien</p>
-						<a href="">Tickets</a>
-						<a href="">Meer info</a>
-						<button id="slider1Button" class="1"></button>
-        				<button id='slider2Button' class="2"></button>
-       					<button id="slider3Button" class="3"></button>
-					</div>
+				<img src="images/voorlinden_slides_2.jpeg" alt="Slider2">
+				<div class="slidertekst">
+					<h2>Listen to Your Eyes</h2>
+					<p>Nu te zien</p>
+					<a href="">Meer info</a>
+					<button id="slider1Button" class="1"></button>
+					<button id='slider2Button' class="2"></button>
+					<button id="slider3Button" class="3"></button>
 				</div>
+			</div>
 
-				<div class="slideritems">
-					<img src="images/voorlinden_slides_3.jpeg" alt="Slider">
-						<div class="slidertekst">
-							<h2>Hightlights</h2>
-							<p>Nu te zien</p>
-							<a href="">Tickets</a>
-							<a href="">Meer info</a>
-							<button id="slider1Button" class="1"></button>
-        					<button id='slider2Button' class="2"></button>
-        					<button id="slider3Button" class="3"></button>
-						</div>
-					</div>
-	</div>
+			<div class="slideritems">
+				<img src="images/voorlinden_slides_3.jpeg" alt="Slider3">
+				<div class="slidertekst">
+					<h2>Hightlights</h2>
+					<p>Nu te zien</p>
+					<a href="">Meer info</a>
+					<button id="slider1Button" class="1"></button>
+					<button id='slider2Button' class="2"></button>
+					<button id="slider3Button" class="3"></button>
+				</div>
+			</div>
+		</div>
 
 
+		<section>
+			<h2>Welkom</h2>
+			<a href="">Plan je bezoek</a>
+			<a href="">Tickets</a>
+			<a href="">Toegankelijkheid</a>
+		</section>
 
-<!--<img src="images/voorlinden_slides_2.jpeg" alt="Slider">
-        <img src="images/voorlinden_slides_3.jpeg" alt="Slider">
-	</figure>
-	<div id="sliderbuttons">
-		<button id="slider1Button" class="1"></button>
-        <button id='slider2Button' class="2"></button>
-        <button id="slider3Button" class="3"></button>
-	</div>-->
-    
-	<section>
-  		<h2>Welkom</h2>
-    	<a href="">Plan je bezoek</a>
-    	<a href="">Tickets</a>
-    	<a href="">Toegankelijkheid</a>
-	</section>
-     
-	<section>
-  		<!--<img src="https://www.voorlinden.nl/wp-content/uploads/2016/07/tuinen-3.jpg" alt="afbeelding"> -->
-    	<h2>Dagelijks geopend</h2>
-      	<address>Voorlinden Buurtweg 90 2244 AG Wassenaar</address>
-      	<a href="">Plan je route</a>
-	</section>
-  
-  
-	<section>
-  		<h2>Blijf op de hoogte</h2>
-    	<p>Schrijf je in voor onze nieuwsbrief</p>
-    	<a href="">Inschrijven</a>
-	</section>
-   
-	<section>
-		<h2>Tuinen</h2>
-      	<h3>Combineer een bezoek aan het museum met een wandeling door de natuur die Voorlinden omringt. Bossen, duinen, weilanden, wateren en tuinen kenmerken het landschap. </h3>
-        <a href="">Meer info</a>
-	</section>
-  
-	<section>
-  		<!--<img src="https://www.voorlinden.nl/wp-content/uploads/winkel_pim_top_1920px.jpg" alt="afbeelding"> -->
-    	<h2>Webshop Voorlinden</h2>
-      	<h3>Haal Voorlinden in huis!</h3>
-        <a href="">Bestel hier</a>
-	</section>
+		<section>
+			<h2>Dagelijks geopend</h2>
+			<address>Voorlinden Buurtweg 90 2244 AG Wassenaar</address>
+			<a href="">Plan je route</a>
+		</section>
 
-	<section>
-		<h2>Schrijf je in voor de nieuwsbrief</h2>
-  		<form action="/action_page.php">
-    		<label for="voornaam"></label>
-    		<input type="text" id="voornaam" name="voornaam" placeholder="Voornaam">
 
-    		<label for="achternaam"></label>
-    		<input type="text" id="achternaam" name="achternaam" placeholder="Achternaam">
+		<section>
+			<h2>Blijf op de hoogte</h2>
+			<p>Schrijf je in voor onze nieuwsbrief</p>
+			<a href="">Inschrijven</a>
+		</section>
 
-			<label for="email"></label>
-   			<input type="text" id="email" name="email" placeholder="E-mail*">
- 		</form>
- 		<a href="">Inschrijven</a>
-	</section>
-		
-	<section>
-  		<a href="">Plan je bezoek</a>
-  		<a href="">Tentoonstelling</a>
-  		<a href="">Tickets</a>
-  		<a href="">Restaurant en safaritent</a>
-	</section>
-  
-</main>
+		<section>
+			<h2>Tuinen</h2>
+			<h3>Combineer een bezoek aan het museum met een wandeling door de natuur die Voorlinden omringt. Bossen,
+				duinen, weilanden, wateren en tuinen kenmerken het landschap. </h3>
+			<a href="">Meer info</a>
+		</section>
 
-	
-<footer>
-	<hr style="border: none;">
-	<h2>Contact</h2>
-	<address>Voorlinden museum & gardens
-	Buurtweg 90
-	2244 AG Wassenaar
-	+31 (0)70 51 21 660
-	info@voorlinden.nl</address>
-	<h2>Over ons</h2>
-	<p>Huisregels
-	Veelgestelde vragen
-	Pers
-	Vacatures
-	Visie en missie
-	ANBI Stichting Voorlinden</p>
-	<h2>Volg ons</h2>
-	<p>Instagram
-	Facebook
-	Twitter
-	Linkedin</p>
-</footer>
- 
-<script src="scripts/script.js"></script>
+		<section>
+			<h2>Webshop Voorlinden</h2>
+			<h3>Haal Voorlinden in huis!</h3>
+			<a href="">Bestel hier</a>
+		</section>
+
+		<section>
+			<h2>Schrijf je in voor de nieuwsbrief</h2>
+			<form action="/action_page.php">
+				<label for="voornaam"></label>
+				<input type="text" id="voornaam" name="voornaam" placeholder="Voornaam">
+
+				<label for="achternaam"></label>
+				<input type="text" id="achternaam" name="achternaam" placeholder="Achternaam">
+
+				<label for="email"></label>
+				<input type="text" id="email" name="email" placeholder="E-mail*">
+			</form>
+			<a href="">Inschrijven</a>
+		</section>
+
+		<section>
+			<a href="">Plan je bezoek</a>
+			<a href="">Tentoonstelling</a>
+			<a href="">Tickets</a>
+			<a href="">Restaurant en safaritent</a>
+		</section>
+
+	</main>
+
+
+	<footer>
+		<hr style="border: none;">
+		<h2>Contact</h2>
+		<address>Voorlinden museum & gardens
+			Buurtweg 90
+			2244 AG Wassenaar
+			+31 (0)70 51 21 660
+			info@voorlinden.nl</address>
+		<h2>Over ons</h2>
+		<p>Huisregels
+			Veelgestelde vragen
+			Pers
+			Vacatures
+			Visie en missie
+			ANBI Stichting Voorlinden</p>
+		<h2>Volg ons</h2>
+		<p>Instagram
+			Facebook
+			Twitter
+			Linkedin</p>
+	</footer>
+
+	<script src="scripts/script.js"></script>
 </body>
+
 </html>
 <!--
 	Bronnenlijst:
@@ -190,5 +169,9 @@
 	https://www.w3schools.com/howto/howto_js_slideshow.asp
 	https://www.w3schools.com/css/tryit.asp?filename=trycss_forms
 	https://codeconvey.com/css-background-image-slider/
+	https://www.youtube.com/watch?v=FWQir0ZfAJI
+	https://player.vimeo.com/video/481283162?h=1821acca4e&app_id=122963
+	https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
+
 
 -->

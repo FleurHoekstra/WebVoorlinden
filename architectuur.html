@@ -1,162 +1,178 @@
 <!doctype html>
 <html lang="nl">
-	
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="author" content="Fleur Admiraal">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Museum Voorlinden</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-	<link rel="stylesheet" href="https://use.typekit.net/dmd4ltx.css">
-	<link rel="stylesheet" href="https://use.typekit.net/dmd4ltx.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="Fleur Admiraal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Museum Voorlinden</title>
+
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="https://use.typekit.net/dmd4ltx.css">
+    <link rel="stylesheet" href="https://use.typekit.net/dmd4ltx.css">
 
 
 </head>
 
 <body>
-<header>
-    <img src="https://www.voorlinden.nl/wp-content/themes/voorlinden/images/logo.png" alt="logo">
-		
-	<nav>
-		<input type="checkbox" /> 
-		<span></span>
-		<span></span>
-		<span></span>
-		<ul>
-			<li><a href="">Tickets</a></li>
-			<li><a href="">Plan je bezoek</a></li>
-			<li><a href="architectuur.html">Over Voorlinden</a></li>
-			<li><a href="">Shop</a></li>
-		</ul>
-	</nav>
+    <header>
 
-	<!-- <p>Test</p> voor border hamburger menu -->
+        <img src="https://www.voorlinden.nl/wp-content/themes/voorlinden/images/logo.png" alt="logo">
+        <nav>
+            <input type="checkbox" />
+            <div class="hamburgermenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Plan je bezoek</a></li>
+                <li><a href="architectuur.html">Over Voorlinden</a></li>
+                <li><a href="">Shop</a></li>
+                <li><button onclick="darkmodeOn()">Dark mode</button></li>
+            </ul>
+        </nav>
 
-    <!--<img src="https://www.voorlinden.nl/wp-content/uploads/Voorlinden_RobinRhode10-homepage.jpg" alt="afbeelding"> -->
-</header>
-
-
-<main>
-
- <!-- <main>
-     <img>
-     <h2>Robin Rhode</h2>
-     <p>Nu te zien</p>
-     <a href="">Tickets</a>
-     <a href="">Meer info</a>
-  </main> -->
-
-  
-    
-	<article>
-        <figure>
-            <a href="">Museum</a>
-            <h1>Architectuur</h1>
-        </figure>
-	</article>
-     
-	<article>
-        <figure>
-    	    <h2>In nauwe samenwerking met de opdrachtgever ontwierp Kraaijvanger Architects een museumgebouw dat in alle opzichten dienend is aan de kunst. De langwerpige grondvorm bestaat uit wanden van natuursteen en transparant glas. Daardoor wanen bezoekers zich in een groot deel van het museum midden in de natuur.</h2>
-            <img src="https://www.voorlinden.nl/wp-content/uploads/Museum-voorlinden-architectuur-1220x608.jpg" alt="">
-        </figure>
-	</article>
-  
-    <article>
-        <figure>
-            <h2>Daglicht</h2>
-            <p>De zalen worden verlicht met daglicht, dat de kunstwerken tot leven brengt. Het kenmerkende licht van de Hollandse kust valt dankzij ingenieus afgesneden buisjes gedoseerd naar binnen. Een velum en transparant glasdak, waarin indirect led-licht is opgenomen, zorgt ervoor dat zowel op minder zonnige dagen als bij avond de kunstwerken zo natuurlijk mogelijk worden verlicht.</p>
-            <img src="https://www.voorlinden.nl/wp-content/uploads/2016/07/plattegrond-e1470772605816.jpg" alt="">
-        </figure>
-    </article>
-    
-    <article>
-        <figure>
-            <h2>Driedeling</h2>
-            <p>Het interieur bestaat uit een twintigtal zalen, auditorium, bibliotheek, prentenkabinet, educatieve ruimte, restauratieatelier en museumshop. Het interieur kent een driedeling die het museale programma volgt: collectiepresentaties (1), wisselende tentoonstellingen (2) en permanente in situ-werken (3).</p>
-            <img src="https://www.voorlinden.nl/wp-content/uploads/2016/07/Bibliotheek-02-1920px-1-1220x686.jpg" alt="">
-        </figure>
-    </article>
-    
-    <article>
-        <figure>
-            <h2>Bibliotheek</h2>
-            <p>Over iedere kunstenaar die je in de tentoonstellingszalen tegenkomt, is in de bibliotheek meer informatie te vinden. Van plint tot plafond is de ruimte gevuld met boeken over de kunstenaars in onze collectie – van antiquarische tot recente uitgaven.</p>
-            <p>In de vitrines tussen de boekenplanken worden kunstenaarsboeken getoond, gemaakt door toonaangevende kunstenaars. Vaak zijn ze gemaakt met behulp van bijzondere technieken en materialen. Voorlinden beschikt over een bijzondere collectie kunstenaarsboeken uit verschillende perioden en stijlen.</p>
-            <p>De bibliotheek is op afspraak te bezichtigen.</p>
-            <h3>‘Het licht schijnt vanuit de planken tegen de ruggen van de boeken, waardoor het gereflecteerd wordt. De boeken zorgen zo letterlijk voor verlichting.’ – Andreia Milani, architect van de bibliotheek</h3>
-            <img src="https://www.voorlinden.nl/wp-content/uploads/Educatie-atelier-museum-voorlinden-korsmit-1220x813.jpg" alt="">
-        </figure>
-    </article>
-
-    <article>
-        <figure>
-            <h2>Educatieatelier</h2>
-            <p>In het educatieatelier worden workshops en activiteiten georganiseerd, aansluitend bij de tentoonstellingen van het moment. De vloer is speciaal voor Voorlinden ontworpen door George Korsmit (1953). Het patroon is volledig bepaald door toeval. De kunstenaar bepaalde de afmetingen van de kleurvlakken door met dobbelstenen te gooien. De kleuren koos hij door een blinde greep uit een doos met zo’n 1600 verschillende kleurstalen.</p>
-            <img src="https://www.voorlinden.nl/wp-content/uploads/2016/07/Voorlinden-0406-596x287.jpg" alt="">
-        </figure>
-    </article>
-
-    <article>
-        <figure>
-            <h2>Restauratieatelier</h2>
-            <p>Moderne kunst brengt soms uitzonderlijke uitdagingen met zich mee als het gaat om conservering, vanwege de vaak ongebruikelijke materialen en kwetsbare oppervlakken. Kijk door een glazen wand mee met het werk van een restaurator, die deze bijzonderheden met precisie te lijf gaat.</p>
-        </figure>
-    </article>
+    </header>
 
 
-	<article>
-		<h2>Schrijf je in voor de nieuwsbrief</h2>
-  		<form action="/action_page.php">
-    		<label for="voornaam"></label>
-    		<input type="text" id="voornaam" name="voornaam" placeholder="Voornaam">
+    <main>
 
-    		<label for="achternaam"></label>
-    		<input type="text" id="achternaam" name="achternaam" placeholder="Achternaam">
 
-			<label for="email"></label>
-   			<input type="text" id="email" name="email" placeholder="E-mail*">
- 		</form>
- 		<a href="">Inschrijven</a>
-	</article>
-		
-	<section>
-  		<a href="">Plan je bezoek</a>
-  		<a href="">Tentoonstelling</a>
-  		<a href="">Tickets</a>
-  		<a href="">Restaurant en safaritent</a>
-	</section>
-  
-</main>
+        <article>
+            <figure>
+                <a href="">Museum</a>
+                <h1>Architectuur</h1>
+            </figure>
+        </article>
 
-	
-<footer>
-	<hr style="border: none;">
-	<h2>Contact</h2>
-	<address>Voorlinden museum & gardens
-    Buurtweg 90
-    2244 AG Wassenaar
-    +31 (0)70 51 21 660
-	info@voorlinden.nl</address>
-	<h2>Over ons</h2>
-	<p>Huisregels
-	Veelgestelde vragen
-	Pers
-	Vacatures
-	Visie en missie
-	ANBI Stichting Voorlinden</p>
-	<h2>Volg ons</h2>
-	<p>Instagram
-	Facebook
-	Twitter
-	Linkedin</p>
-</footer>
- 
-<script src="scripts/script.js"></script>
+        <article>
+            <figure>
+                <h3>In nauwe samenwerking met de opdrachtgever ontwierp Kraaijvanger Architects een museumgebouw dat in
+                    alle opzichten dienend is aan de kunst. De langwerpige grondvorm bestaat uit wanden van natuursteen
+                    en transparant glas. Daardoor wanen bezoekers zich in een groot deel van het museum midden in de
+                    natuur.</h3>
+                <iframe src="https://player.vimeo.com/video/177565344?h=b2cf2369bc" width="640" height="360"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+           </figure>
+        </article>
+
+        <article>
+            <figure>
+                <h2>Daglicht</h2>
+                <p>De zalen worden verlicht met daglicht, dat de kunstwerken tot leven brengt. Het kenmerkende licht van
+                    de Hollandse kust valt dankzij ingenieus afgesneden buisjes gedoseerd naar binnen. Een velum en
+                    transparant glasdak, waarin indirect led-licht is opgenomen, zorgt ervoor dat zowel op minder
+                    zonnige dagen als bij avond de kunstwerken zo natuurlijk mogelijk worden verlicht.</p>
+                <img src="https://www.voorlinden.nl/wp-content/uploads/2016/07/plattegrond-e1470772605816.jpg" alt="daglichtplaatje">
+            </figure>
+        </article>
+
+        <article>
+            <figure>
+                <h2>Driedeling</h2>
+                <p>Het interieur bestaat uit een twintigtal zalen, auditorium, bibliotheek, prentenkabinet, educatieve
+                    ruimte, restauratieatelier en museumshop. Het interieur kent een driedeling die het museale
+                    programma volgt: collectiepresentaties (1), wisselende tentoonstellingen (2) en permanente in
+                    situ-werken (3).</p>
+                <img src="https://www.voorlinden.nl/wp-content/uploads/2016/07/Bibliotheek-02-1920px-1-1220x686.jpg"
+                    alt="driedelingplaatje">
+            </figure>
+        </article>
+
+        <article>
+            <figure>
+                <h2>Bibliotheek</h2>
+                <p>Over iedere kunstenaar die je in de tentoonstellingszalen tegenkomt, is in de bibliotheek meer
+                    informatie te vinden. Van plint tot plafond is de ruimte gevuld met boeken over de kunstenaars in
+                    onze collectie – van antiquarische tot recente uitgaven.</p>
+                <p>In de vitrines tussen de boekenplanken worden kunstenaarsboeken getoond, gemaakt door toonaangevende
+                    kunstenaars. Vaak zijn ze gemaakt met behulp van bijzondere technieken en materialen. Voorlinden
+                    beschikt over een bijzondere collectie kunstenaarsboeken uit verschillende perioden en stijlen.</p>
+                <p>De bibliotheek is op afspraak te bezichtigen.</p>
+                <h3>‘Het licht schijnt vanuit de planken tegen de ruggen van de boeken, waardoor het gereflecteerd
+                    wordt. De boeken zorgen zo letterlijk voor verlichting.’ – Andreia Milani, architect van de
+                    bibliotheek</h3>
+                <img src="https://www.voorlinden.nl/wp-content/uploads/Educatie-atelier-museum-voorlinden-korsmit-1220x813.jpg"
+                    alt="bibliotheekplaatje">
+            </figure>
+        </article>
+
+        <article>
+            <figure>
+                <h2>Educatieatelier</h2>
+                <p>In het educatieatelier worden workshops en activiteiten georganiseerd, aansluitend bij de
+                    tentoonstellingen van het moment. De vloer is speciaal voor Voorlinden ontworpen door George Korsmit
+                    (1953). Het patroon is volledig bepaald door toeval. De kunstenaar bepaalde de afmetingen van de
+                    kleurvlakken door met dobbelstenen te gooien. De kleuren koos hij door een blinde greep uit een doos
+                    met zo’n 1600 verschillende kleurstalen.</p>
+                <img src="https://www.voorlinden.nl/wp-content/uploads/2016/07/Voorlinden-0406-596x287.jpg" alt="ateliervoorlinden">
+            </figure>
+        </article>
+
+        <article>
+            <figure>
+                <h2>Restauratieatelier</h2>
+                <p>Moderne kunst brengt soms uitzonderlijke uitdagingen met zich mee als het gaat om conservering,
+                    vanwege de vaak ongebruikelijke materialen en kwetsbare oppervlakken. Kijk door een glazen wand mee
+                    met het werk van een restaurator, die deze bijzonderheden met precisie te lijf gaat.</p>
+            </figure>
+        </article>
+
+
+        <article>
+            <h2>Schrijf je in voor de nieuwsbrief</h2>
+            <form action="/action_page.php">
+                <label for="voornaam"></label>
+                <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam">
+
+                <label for="achternaam"></label>
+                <input type="text" id="achternaam" name="achternaam" placeholder="Achternaam">
+
+                <label for="email"></label>
+                <input type="text" id="email" name="email" placeholder="E-mail*">
+            </form>
+            <a href="">Inschrijven</a>
+        </article>
+
+        <section>
+            <a href="">Plan je bezoek</a>
+            <a href="">Tentoonstelling</a>
+            <a href="">Tickets</a>
+            <a href="">Restaurant en safaritent</a>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <hr style="border: none;">
+        <h2>Contact</h2>
+        <address>Voorlinden museum & gardens
+            Buurtweg 90
+            2244 AG Wassenaar
+            +31 (0)70 51 21 660
+            info@voorlinden.nl</address>
+        <h2>Over ons</h2>
+        <p>Huisregels
+            Veelgestelde vragen
+            Pers
+            Vacatures
+            Visie en missie
+            ANBI Stichting Voorlinden</p>
+        <h2>Volg ons</h2>
+        <p>Instagram
+            Facebook
+            Twitter
+            Linkedin</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
+
 </html>
 <!--
 	Bronnenlijst:

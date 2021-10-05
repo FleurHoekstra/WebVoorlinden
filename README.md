@@ -22,7 +22,7 @@ Fleur Hoekstra (vervangen door jouw naam)
 Blauwe piste (kies uit zwart, rood óf blauw)
 
 #### Je focus:
-Responsive (kies uit responsive óf surface plane)
+Surface plane (kies uit responsive óf surface plane)
  
 </details>
 
@@ -61,11 +61,7 @@ hier de naam van de pagina
 <img src="images/Artboard – 1.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/Artboard – 2.png" width="375px" alt="breakdown van een dynamisch deel">
-
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
+<img src="images/Artboard – 3.png" width="375px" alt="breakdown van een dynamisch deel">
 </details>
 
 
@@ -80,24 +76,20 @@ hier de naam van de pagina
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+<img src="images/ss1" width="375px" alt="breakdown van een dynamisch deel">
 
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+<p>Wat goed ging was de code schrijven op Codepen. Doordat we alles opdrachten daarin maakten kon ik er al een beetje mee overweg. Wat slechter ging was het juiste coderen op de juiste formaat in Codepen. Ik kreeg van andere leerlingen de tip om in Visualcode te gaan werken. Dat heb ik uiteindelijk ook gedaan.</p>
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+Voor het eerste gesprek, kreeg ik goede feedback. Het zag er netjes uit. Ik moest wel een paar aanpassingen maken:
+- <h3> -> <p> element van maken
+- In de fouter niet een <h2> maar <h4> gebruiken.
+- Voor het adres kun je het <address> element gebruiken, dan wordt alles goed gezet.
+- Ook de <button> elementen <a> elementen van maken.
+- Bij alt wordt bedoelt wat je ziet. Voor blinden…
 
 </details>
 
@@ -113,24 +105,15 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+<img src="images/ss2.HEIC" width="375px" alt="breakdown van een dynamisch deel">
 
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+<p>Ik merkte dat ik veel moeite heb met het maken van de navigatiebar. Verder gaat het wel prima.</p>
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Bij het tweede gesprek ging het fout bij mijn Github. Ik heb samen met een student-assistent dat opgelost. Hij gaf mij de tip om de div bij mijn slider op te lossen. Ik kreeg een link van een soortgelijke slider die misschien beter was voor mijn soort slider met minder div. Deze slider was inderdaad beter maar om de juiste slider na te kunnen maken had ik geen andere keus dan toch div te gebruiken. Ik heb veel oplossingen opgezocht en uiteindelijk is het gelukt, maar wel met een aantal div.
 
 </details>
 
@@ -183,24 +166,15 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+<img src="images/ss3" width="375px" alt="breakdown van een dynamisch deel">
 
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+<p>Ik ben veel ziek geweest en ik merk dat ik ook daardoor een achterstand heb opgelopen. Ik doe mijn best om bij te blijven, maar loop tegen veel dingen aan bij mijn code. Ik heb veel hulp gevraagd aan studentassistenten en medestudenten, maar vaak werkt het dan alsnog niet optimaal.
+Mijn slider is me uiteindelijk gelukt door er zelf wat mee te spelen. Ondanks dat ik minder div heb gebruikt dan voorheen is het alsnog vrij veel.</p>
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Bij het derde gesprek vertelde Robert dat ik goed moest kijken naar ‘position:absolute/position: relative’ en de ‘width’. Ook moest ik m’n code goed opschonen om mijn website goed responsieve te kunnen krijgen. Ik was het overzicht over het vak kwijt, omdat ik veel ziek ben geweest en dus best veel informatie heb misgelopen. Daar probeer ik nu aan te werken.
 
 </details>
 
