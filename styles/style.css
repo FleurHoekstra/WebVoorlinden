@@ -16,20 +16,15 @@ html {
 }
 
 header {
-  display: flex; 
-  flex-direction: row; 
-  justify-content: flex-end; 
-  min-height: 68px; 
-  align-items: center; 
-  padding: 0 37px; 
-  position: relative;
+  display: flex;
+
 }
 
 header img {
   height: 15px;
 }
 
-nav {
+/* nav {
 margin: 0;
 padding: 0;
 position: absolute;
@@ -97,7 +92,7 @@ nav .hamburgermenu span:nth-of-type(3) {
 }
 
 nav .hamburgermenu input:checked~span {
-  /*span = lijnen */
+  /*span = lijnen 
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: var(--main-color);
@@ -113,7 +108,7 @@ nav input:checked~span:nth-of-type(3) {
 }
 
 nav ul {
-  /*achtergond van de nav*/
+  /*achtergond van de nav
   position: absolute;
   margin: -100px 0 0 -40px;
   padding-top: 125px;
@@ -155,7 +150,190 @@ nav ul li a {
 
 nav input:checked~ul {
   transform: none;
+} */
+
+nav img {
+  right: 20px;
+  font-size: 2.5rem;
+  top: 30px;
+  height: 20px;
 }
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+
+}
+
+nav div img {
+  order: 1;
+  font-size: 2.3rem;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.navbar a {
+  color: var(--main-color);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  font-weight: 500;
+  font-family: 'sofiapro', sans-serif;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  color: #117964;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    opacity: 0.95;
+  }
+
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+    bottom: 5px;
+  }
+
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+  }
+
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 28px;
+    width: 35px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .navbar-container .hamburger-lines button {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: var(--main-color);
+
+  }
+
+  .navbar-container .hamburger-lines button:first-child {
+    transform-origin: 0% 0%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines button:nth-child(2) {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines button:last-child {
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar .menu-items {
+    padding-top: 100px;
+    background: #fff;
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -38px;
+    padding-left: 40px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #aaa;
+    overflow: scroll;
+  }
+
+  .navbar .menu-items li {
+    margin-bottom: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  nav div img {
+    top: 10px;
+    right: 15px;
+    font-size: 2.5rem;
+    position: absolute;
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines button:first-child {
+    transform: rotate(45deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines button:nth-child(2) {
+    transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines button:last-child {
+    transform: rotate(-45deg);
+  }
+
+}
+
+@media (max-width: 500px) {
+  .navbar-container input[type="checkbox"]:checked~.logo {
+    display: none;
+  }
+}
+
+
+
+
 
 /*slider*/
 .bgslider {
@@ -205,7 +383,7 @@ nav input:checked~ul {
   left: 40%;
   transform: translate(0, -50%);
   text-align: center;
-  
+
 }
 
 .slidertekst h2 {
@@ -338,7 +516,7 @@ body section:nth-of-type(3) a {
 }
 
 body section:nth-of-type(4) {
-  background-image: url(https://www.voorlinden.nl/wp-content/uploads/2016/07/tuinen-3.jpg);
+  background-image: url("https://www.voorlinden.nl/wp-content/uploads/2016/07/tuinen-3.jpg");
   color: white;
   background-position: 50% 50%;
   height: 500px;
@@ -360,7 +538,7 @@ body section:nth-of-type(4) h3 {
 }
 
 body section:nth-of-type(5) {
-  background-image: url(https://www.voorlinden.nl/wp-content/uploads/winkel_pim_top_1920px.jpg);
+  background-image: url("https://www.voorlinden.nl/wp-content/uploads/winkel_pim_top_1920px.jpg");
   color: white;
   background-position: 50% 50%;
   height: 500px;
@@ -430,23 +608,13 @@ body section:nth-of-type(7) a:nth-child(3) {
   align-items: center;
 }
 
-hr {
-  width: 100%;
-  height: 0.01em;
-  border: 0 none;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  background-color: #ccc;
-}
-
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: 'sofiapro', sans-serif;
+  background-color: #D0D0D0;
 }
 
 footer h2 {
@@ -463,7 +631,6 @@ footer address {
   text-align: center;
   font-size: 17px;
   line-height: 1.5em;
-  color: #ccc;
 }
 
 footer p {
@@ -471,7 +638,6 @@ footer p {
   width: 6em;
   font-size: 17px;
   line-height: 1.5em;
-  color: #ccc;
   margin: 10px;
 }
 
@@ -489,7 +655,7 @@ body article {
 body article figure h2 {
   font-size: 28px;
   text-align: left;
-  width: 5em; 
+  width: 5em;
 }
 
 
@@ -511,7 +677,7 @@ body article figure a {
 }
 
 body article:first-child {
-  background-image: url(https://www.voorlinden.nl/wp-content/uploads/2016/07/Museum-zijaanzicht-1920px.png);
+  background-image: url("https://www.voorlinden.nl/wp-content/uploads/2016/07/Museum-zijaanzicht-1920px.png");
   background-position: 50% 50%;
   height: 220px;
   position: relative;
@@ -537,10 +703,10 @@ body article:first-child figure h1 {
 }
 
 
-body article:nth-child(2) figure h3{
+body article:nth-child(2) figure h3 {
   font-size: 20px;
   line-height: 26px;
-  text-align: center; 
+  text-align: center;
 }
 
 body article:nth-child(2) img {
@@ -609,10 +775,10 @@ body article:nth-of-type(8) a {
   font-family: 'sofiapro', sans-serif;
   display: inline-block;
   margin: 1em;
-  
+
 }
 
-body iframe{
+body iframe {
   display: block;
   width: 100%;
   height: 100%;
@@ -625,7 +791,7 @@ body iframe{
   position: absolute;
   margin: -100px 0 0 -40px;
   padding-top: 125px;
-  background:black;
+  background: black;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
@@ -633,7 +799,7 @@ body iframe{
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
-.dark-mode nav ul li:last-child{
+.dark-mode nav ul li:last-child {
   background-color: black;
 }
 
@@ -643,7 +809,7 @@ body iframe{
 }
 
 .dark-mode section:nth-of-type(4) {
-  background-image: url(https://www.voorlinden.nl/wp-content/uploads/2016/07/tuinen-3.jpg);
+  background-image: url("https://www.voorlinden.nl/wp-content/uploads/2016/07/tuinen-3.jpg");
   color: black;
   background-position: 50% 50%;
   height: 500px;
@@ -657,7 +823,7 @@ body iframe{
 }
 
 .dark-mode section:nth-of-type(5) {
-  background-image: url(https://www.voorlinden.nl/wp-content/uploads/winkel_pim_top_1920px.jpg);
+  background-image: url("https://www.voorlinden.nl/wp-content/uploads/winkel_pim_top_1920px.jpg");
   color: black;
   background-position: 50% 50%;
   height: 500px;
@@ -699,9 +865,11 @@ body iframe{
   text-align: center;
 }
 
-.dark-mode article:nth-of-type(8){
+.dark-mode article:nth-of-type(8) {
   display: block;
   background-color: #787878;
   height: 360px;
   margin: 20px 0;
 }
+
+
