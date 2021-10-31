@@ -7,6 +7,7 @@
 
 :root {
   --main-color: #4bb96d;
+  --secondary-color: #000000;
 }
 
 html {
@@ -211,7 +212,7 @@ nav div img {
 
 nav ul li:nth-child(5) button {
   color: white;
-  background-color: black;
+  background-color: var(--secondary-color);
   border: none;
   font-family: 'sofiapro', sans-serif;
   padding: 10px;
@@ -525,7 +526,7 @@ footer ul li a {
   margin: 10px;
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: var(--secondary-color);
 }
 
 footer ul {
@@ -679,7 +680,7 @@ body iframe {
 
 /*dark-mode button*/
 .dark-mode nav ul li:nth-child(5) button {
-  color: black;
+  color: var(--secondary-color);
   background-color: white;
   border: none;
   font-family: 'sofiapro', sans-serif;
@@ -690,20 +691,20 @@ body iframe {
 .dark-mode .navbar {
   box-shadow: 0px 5px 10px 0px #aaa;
   width: 100%;
-  background: #000;
+  background: var(--secondary-color);
   color: #fff;
   opacity: 0.85;
   z-index: 100;
 }
 
 .dark-mode .navbar-container .hamburger-lines button {
-  background-color: black;
+  background-color: var(--secondary-color);
   border: none;
 }
 
 .dark-mode .navbar .menu-items {
   padding-top: 100px;
-  background: #000;
+  background: var(--secondary-color);
   max-width: 300px;
   transform: translate(-150%);
   display: flex;
@@ -716,31 +717,31 @@ body iframe {
 }
 
 .dark-mode {
-  color: black;
+  color: var(--secondary-color);
 }
 
 .dark-mode section:nth-of-type(4) {
   background-image: url("https://www.voorlinden.nl/wp-content/uploads/2016/07/tuinen-3.jpg");
-  color: black;
+  color: var(--secondary-color);
   background-position: 50% 50%;
 }
 
 .dark-mode section:nth-of-type(4) a {
   background-color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
-  color: black;
+  color: var(--secondary-color);
 }
 
 .dark-mode section:nth-of-type(5) {
   background-image: url("https://www.voorlinden.nl/wp-content/uploads/winkel_pim_top_1920px.jpg");
-  color: black;
+  color: var(--secondary-color);
   background-position: 50% 50%;
 }
 
 .dark-mode section:nth-of-type(5) a {
   background-color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
-  color: black;
+  color: var(--secondary-color);
 }
 
 .dark-mode section:nth-of-type(5) h3 {
@@ -756,14 +757,14 @@ body iframe {
   color: var(--main-color);
   font-weight: bold;
   border: 2px solid var(--main-color);
-  background-color: black;
+  background-color: var(--secondary-color);
 }
 
 .dark-mode section:nth-of-type(3) a {
   color: var(--main-color);
   font-weight: bold;
   border: 2px solid var(--main-color);
-  background-color: black;
+  background-color: var(--secondary-color);
 }
 
 .dark-mode section:nth-of-type(6) {
@@ -787,19 +788,19 @@ body iframe {
   align-items: center;
   justify-content: center;
   font-family: 'sofiapro', sans-serif;
-  background-color: black;
+  background-color: var(--secondary-color);
   color: white;
 }
 
 .dark-mode section:nth-of-type(7) {
-  background-color: black;
+  background-color: var(--secondary-color);
   padding: 20px;
 }
 
 .dark-mode article {
   text-align: center;
   font-family: 'sofiapro', sans-serif;
-  background-color: black;
+  background-color: var(--secondary-color);
   color: white;
   padding: 10px;
 }
@@ -818,7 +819,7 @@ body iframe {
   align-items: center;
   justify-content: center;
   font-family: 'sofiapro', sans-serif;
-  background-color: black;
+  background-color: var(--secondary-color);
   color: white;
   padding: 20px;
 }
