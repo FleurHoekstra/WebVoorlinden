@@ -105,7 +105,7 @@ Voor het eerste gesprek, kreeg ik goede feedback. Het zag er netjes uit. Ik moes
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-<img src="images/ss2.HEIC" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/ss2.png" width="375px" alt="breakdown van een dynamisch deel">
 
 <p>Ik merkte dat ik veel moeite heb met het maken van de navigatiebar. Verder gaat het wel prima.</p>
 
