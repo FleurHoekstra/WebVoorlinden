@@ -76,7 +76,7 @@ hier de naam van de pagina
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-<img src="images/ss1" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/ss1.png" width="375px" alt="breakdown van een dynamisch deel">
 
 <p>Wat goed ging was de code schrijven op Codepen. Doordat we alles opdrachten daarin maakten kon ik er al een beetje mee overweg. Wat slechter ging was het juiste coderen op de juiste formaat in Codepen. Ik kreeg van andere leerlingen de tip om in Visualcode te gaan werken. Dat heb ik uiteindelijk ook gedaan.</p>
 
@@ -166,7 +166,7 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-<img src="images/ss3" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/ss3.png" width="375px" alt="breakdown van een dynamisch deel">
 
 <p>Ik ben veel ziek geweest en ik merk dat ik ook daardoor een achterstand heb opgelopen. Ik doe mijn best om bij te blijven, maar loop tegen veel dingen aan bij mijn code. Ik heb veel hulp gevraagd aan studentassistenten en medestudenten, maar vaak werkt het dan alsnog niet optimaal.
 Mijn slider is me uiteindelijk gelukt door er zelf wat mee te spelen. Ondanks dat ik minder div heb gebruikt dan voorheen is het alsnog vrij veel.</p>

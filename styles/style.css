@@ -129,25 +129,31 @@ nav div img {
     justify-content: space-between;
   }
 
-  .navbar-container .hamburger-lines button {
+  .navbar-container .hamburger-lines button{
+    background-color: white;
+    border: none;
+  }
+
+  .navbar-container .hamburger-lines button span{
     display: block;
     height: 4px;
     width: 100%;
     border-radius: 10px;
     background: var(--main-color);
+    margin: 0.2em;
 
   }
 
-  .navbar-container .hamburger-lines button:first-child {
+  .navbar-container .hamburger-lines button span:first-child {
     transform-origin: 0% 0%;
     transition: transform 0.3s ease-in-out;
   }
 
-  .navbar-container .hamburger-lines button:nth-child(2) {
+  .navbar-container .hamburger-lines button span:nth-child(2) {
     transition: transform 0.2s ease-in-out;
   }
 
-  .navbar-container .hamburger-lines button:last-child {
+  .navbar-container .hamburger-lines button span:last-child {
     transform-origin: 0% 100%;
     transition: transform 0.3s ease-in-out;
   }
@@ -183,16 +189,16 @@ nav div img {
     transform: translateX(0);
   }
 
-  .navbar-container input[type="checkbox"]:checked~.hamburger-lines button:first-child {
-    transform: rotate(45deg);
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines button span:first-child {
+    transform: rotate(39deg);
   }
 
-  .navbar-container input[type="checkbox"]:checked~.hamburger-lines button:nth-child(2) {
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines button span:nth-child(2) {
     transform: scaleY(0);
   }
 
-  .navbar-container input[type="checkbox"]:checked~.hamburger-lines button:last-child {
-    transform: rotate(-45deg);
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines button span:last-child {
+    transform: rotate(-39deg);
   }
 
 }
@@ -203,7 +209,14 @@ nav div img {
   }
 }
 
-
+nav ul li:nth-child(5) button{
+  color: white;
+  background-color: black;
+  border: none;
+  font-family: 'sofiapro', sans-serif;
+  padding: 10px;
+  border-radius: 50px;
+}
 
 
 
@@ -253,7 +266,7 @@ nav div img {
   position: absolute;
   top: 50%;
   left: 40%;
-  transform: translate(0, -50%);
+  transform: translate(-30%, -50%);
   text-align: center;
 
 }
@@ -294,6 +307,7 @@ nav div img {
   margin: 0.2em;
   position: relative;
   top: 190px;
+  border: none;
 
 
 }
@@ -469,7 +483,7 @@ body section:nth-of-type(6) a {
 }
 
 body section:nth-of-type(7) {
-  margin: 20px;
+  padding: 20px;
 }
 
 body section:nth-of-type(7) a:nth-child(2) {
@@ -505,14 +519,31 @@ footer address {
   line-height: 1.5em;
 }
 
-footer p {
+footer ul li a{
   text-align: center;
   width: 6em;
   font-size: 17px;
   line-height: 1.5em;
   margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
 }
 
+footer ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0%;
+}
+
+footer li {
+  font-style: normal;
+  align-items: center;
+  width: 10em;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.5em;
+}
 
 
 /*stijling pagina 2*/
@@ -561,10 +592,8 @@ body article:first-child figure a {
   font-size: 20px;
   left: 20px;
   top: -5px;
-  padding: 10px 20px;
   border-radius: 0.1em;
   display: block;
-  margin: 2em;
 }
 
 body article:first-child figure h1 {
@@ -646,8 +675,7 @@ body article:nth-of-type(8) a {
   text-decoration: none;
   font-family: 'sofiapro', sans-serif;
   display: inline-block;
-  margin: 1em;
-
+  margin: 0.5em;
 }
 
 body iframe {
@@ -656,30 +684,50 @@ body iframe {
   height: 100%;
 }
 
-
-
-#dark-mode nav ul {
-  /*achtergond van de nav*/
-  position: absolute;
-  margin: -100px 0 0 -40px;
-  padding-top: 125px;
-  background: black;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(0, -100%);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+.dark-mode nav ul li:nth-child(5) button{
+  color: black;
+  background-color: white;
+  border: none;
+  font-family: 'sofiapro', sans-serif;
+  padding: 10px;
+  border-radius: 50px;
 }
 
-#dark-mode nav ul li:last-child {
-  background-color: black;
+
+
+.dark-mode .navbar{
+  box-shadow: 0px 5px 10px 0px #aaa;
+  width: 100%;
+  background: #000;
+  color:  #fff;
+  opacity: 0.85;
+  z-index: 100;
 }
 
-#dark-mode {        
-  color: white;
+.dark-mode .navbar-container .hamburger-lines button{
+  background-color:black;
+  border: none;
 }
 
-#dark-mode section:nth-of-type(4) {
+.dark-mode .navbar .menu-items {
+  padding-top: 100px;
+  background: #000;
+  max-width: 300px;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -38px;
+  padding-left: 40px;
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 5px 0px 10px 0px #aaa;
+  overflow: scroll;
+}
+
+.dark-mode {        
+  color: black;
+}
+
+.dark-mode section:nth-of-type(4) {
   background-image: url("https://www.voorlinden.nl/wp-content/uploads/2016/07/tuinen-3.jpg");
   color: black;
   background-position: 50% 50%;
@@ -687,26 +735,26 @@ body iframe {
 
 }
 
-#dark-mode section:nth-of-type(4) a {
+.dark-mode section:nth-of-type(4) a {
   background-color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
   color: black;
 }
 
-#dark-mode section:nth-of-type(5) {
+.dark-mode section:nth-of-type(5) {
   background-image: url("https://www.voorlinden.nl/wp-content/uploads/winkel_pim_top_1920px.jpg");
   color: black;
   background-position: 50% 50%;
   height: 500px;
 }
 
-#dark-mode section:nth-of-type(5) a {
+.dark-mode section:nth-of-type(5) a {
   background-color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
   color: black;
 }
 
-#dark-mode section:nth-of-type(5) h3 {
+.dark-mode section:nth-of-type(5) h3 {
   align-items: center;
   width: 10em;
   text-align: center;
@@ -715,32 +763,80 @@ body iframe {
   font-weight: lighter;
 }
 
-#dark-mode section:nth-of-type(2) a {
+.dark-mode section:nth-of-type(2) a {
   color: var(--main-color);
   font-weight: bold;
   border: 2px solid var(--main-color);
   background-color: black;
 }
 
-#dark-mode section:nth-of-type(3) a {
+.dark-mode section:nth-of-type(3) a {
   color: var(--main-color);
   font-weight: bold;
   border: 2px solid var(--main-color);
   background-color: black;
 }
 
-#dark-mode section:nth-of-type(6) {
+.dark-mode section:nth-of-type(6) {
   background-color: #787878;
   height: 350px;
   align-items: center;
   text-align: center;
 }
 
-#dark-mode article:nth-of-type(8) {
+.dark-mode article:nth-of-type(8) {
   display: block;
   background-color: #787878;
   height: 360px;
-  margin: 20px 0;
+  margin: 0%;
+
+}
+
+.dark-mode section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'sofiapro', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.dark-mode section:nth-of-type(7) {
+  background-color: black;
+  padding: 20px;
+}
+
+.dark-mode article {
+  text-align: center;
+  font-family: 'sofiapro', sans-serif;
+  background-color: black;
+  color: white;
+  padding: 10px;
 }
 
 
+.dark-mode body iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.dark-mode section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'sofiapro', sans-serif;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.dark-mode article:nth-of-type(8) {
+  display: block;
+  background-color: #787878;
+  height: 370px;
+  margin: 0%;
+}
