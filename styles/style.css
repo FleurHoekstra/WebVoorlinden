@@ -8,6 +8,8 @@
 :root {
   --main-color: #4bb96d;
   --secondary-color: #000000;
+  --main-font: 'sofiapro', sans-serif;
+  --background-color: white;
 }
 
 html {
@@ -18,18 +20,13 @@ html {
 
 header {
   display: flex;
-
-}
-
-header img {
-  height: 15px;
 }
 
 nav img {
-  right: 20px;
+  right: 1em;
   font-size: 2.5rem;
-  top: 30px;
-  height: 20px;
+  top: 2em;
+  height: 0.5em;
 }
 
 .navbar input[type="checkbox"],
@@ -38,13 +35,12 @@ nav img {
 }
 
 .container {
-  max-width: 1200px;
   width: 90%;
   margin: auto;
 }
 
 .navbar {
-  box-shadow: 0px 5px 10px 0px #aaa;
+  box-shadow: 0em 0.2em 0.5em 0em #aaa;
   width: 100%;
   background: #fff;
   color: #000;
@@ -55,9 +51,8 @@ nav img {
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  height: 64px;
+  height: 3em;
   align-items: center;
-
 }
 
 nav div img {
@@ -72,7 +67,7 @@ nav div img {
 
 .menu-items li {
   list-style: none;
-  margin-left: 1.5rem;
+  margin-left: 0.2rem;
   font-size: 1.3rem;
 }
 
@@ -81,8 +76,8 @@ nav div img {
   text-decoration: none;
   transition: color 0.3s ease-in-out;
   font-weight: 500;
-  font-family: 'sofiapro', sans-serif;
-  font-size: 14px;
+  font-family: var(--main-font);
+  font-size: 1em;
 }
 
 .navbar a:hover {
@@ -102,74 +97,74 @@ nav div img {
   .navbar-container {
     display: block;
     position: relative;
-    height: 64px;
-    bottom: 5px;
+    height: 4em;
+    bottom: 0.5em;
   }
 
   .navbar-container input[type="checkbox"] {
     position: absolute;
     display: block;
-    height: 32px;
-    width: 30px;
-    top: 20px;
-    left: 20px;
+    height: 2em;
+    width: 2.1em;
+    top: 1em;
+    left: 1.2em;
     z-index: 5;
     opacity: 0;
   }
 
   .navbar-container .hamburger-lines {
     display: block;
-    height: 28px;
-    width: 35px;
+    height: 2em;
+    width: 2em;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 1.18em;
+    left: 1em;
     z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .navbar-container .hamburger-lines button {
-    background-color: white;
+  .navbar-container .hamburger-lines a {
+    background: var(--background-color);
     border: none;
   }
 
-  .navbar-container .hamburger-lines button span {
+  .navbar-container .hamburger-lines a span {
     display: block;
-    height: 4px;
+    height: 0.3em;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0.2em;
     background: var(--main-color);
     margin: 0.2em;
 
   }
 
-  .navbar-container .hamburger-lines button span:first-child {
+  .navbar-container .hamburger-lines a span:first-child {
     transform-origin: 0% 0%;
     transition: transform 0.3s ease-in-out;
   }
 
-  .navbar-container .hamburger-lines button span:nth-child(2) {
+  .navbar-container .hamburger-lines a span:nth-child(2) {
     transition: transform 0.2s ease-in-out;
   }
 
-  .navbar-container .hamburger-lines button span:last-child {
+  .navbar-container .hamburger-lines a span:last-child {
     transform-origin: 0% 100%;
     transition: transform 0.3s ease-in-out;
   }
 
   .navbar .menu-items {
-    padding-top: 100px;
+    padding-top: 5em;
     background: #fff;
-    max-width: 300px;
+    max-width: 15em;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
-    margin-left: -38px;
-    padding-left: 40px;
+    margin-left: -3em;
+    padding-left: 3em;
     transition: transform 0.5s ease-in-out;
-    box-shadow: 5px 0px 10px 0px #aaa;
+    box-shadow: 0em 0.2em 0.5em 0em #aaa;
     overflow: scroll;
   }
 
@@ -180,8 +175,8 @@ nav div img {
   }
 
   nav div img {
-    top: 10px;
-    right: 15px;
+    top: 0.5em;
+    right: 1em;
     font-size: 2.5rem;
     position: absolute;
   }
@@ -190,16 +185,16 @@ nav div img {
     transform: translateX(0);
   }
 
-  .navbar-container input[type="checkbox"]:checked~.hamburger-lines button span:first-child {
-    transform: rotate(39deg);
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines a span:first-child {
+    transform: rotate(35deg);
   }
 
-  .navbar-container input[type="checkbox"]:checked~.hamburger-lines button span:nth-child(2) {
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines a span:nth-child(2) {
     transform: scaleY(0);
   }
 
-  .navbar-container input[type="checkbox"]:checked~.hamburger-lines button span:last-child {
-    transform: rotate(-39deg);
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines a span:last-child {
+    transform: rotate(-35deg);
   }
 
 }
@@ -214,7 +209,7 @@ nav ul li:nth-child(5) button {
   color: white;
   background-color: var(--secondary-color);
   border: none;
-  font-family: 'sofiapro', sans-serif;
+  font-family: var(--main-font);
   padding: 10px;
   border-radius: 50px;
 }
@@ -224,7 +219,7 @@ nav ul li:nth-child(5) button {
 /*slider style*/
 .bgslider {
   width: 100%;
-  height: 700px;
+  height: 45em;
   position: relative;
   overflow: hidden;
 }
@@ -266,33 +261,33 @@ nav ul li:nth-child(5) button {
   padding: 10rem 5rem;
   position: absolute;
   top: 50%;
-  left: 40%;
-  transform: translate(-30%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 
 }
 
 .slidertekst h2 {
-  font-size: 30px;
+  font-size: 3em;
   color: white;
   text-align: center;
   width: 5em;
 }
 
 .slidertekst p {
-  font-size: 20px;
+  font-size: 1.5em;
   color: white;
   text-align: center;
 }
 
 .slidertekst a {
-  font-size: 20px;
+  font-size: 1.2em;
   color: white;
   text-align: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
-  padding: 10px;
+  padding: 0.5em;
   text-decoration: none;
   position: absolute;
 
@@ -300,14 +295,14 @@ nav ul li:nth-child(5) button {
 
 .slidertekst button {
   background-color: var(--main-color);
-  font-size: 18px;
+  font-size: 1.2em;
   color: var(--main-color);
   padding: 0.5em;
   border-radius: 10em;
   text-decoration: none;
   margin: 0.2em;
   position: relative;
-  top: 190px;
+  top: 10em;
   border: none;
 
 
@@ -347,12 +342,12 @@ body section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'sofiapro', sans-serif;
+  font-family: var(--main-font);
 }
 
 body section h2 {
-  font-size: 32px;
-  font-family: 'sofiapro', sans-serif;
+  font-size: 1.8em;
+  font-family: var(--main-font);
   text-align: center;
   width: 5em;
 }
@@ -365,13 +360,13 @@ body section address {
 body section p {
   text-align: center;
   width: 8em;
-  font-size: 18px;
+  font-size: 1em;
   line-height: 1.5em;
 }
 
 body section a {
   background-color: var(--main-color);
-  font-size: 18px;
+  font-size: 1em;
   color: white;
   padding: 0.5em;
   border-radius: 0.2em;
@@ -384,22 +379,22 @@ body section:nth-of-type(2) address {
   align-items: center;
   width: 10em;
   text-align: center;
-  font-size: 18px;
+  font-size: 1em;
   line-height: 1.5em;
 }
 
 body section:nth-of-type(2) a {
   color: var(--main-color);
   font-weight: bold;
-  border: 2px solid var(--main-color);
-  background-color: white;
+  border: 0.15em solid var(--main-color);
+  background: var(--background-color);
 }
 
 body section:nth-of-type(3) a {
   color: var(--main-color);
   font-weight: bold;
-  border: 2px solid var(--main-color);
-  background-color: white;
+  border: 0.2em solid var(--main-color);
+  background: var(--background-color);
 }
 
 body section:nth-of-type(4) {
@@ -417,8 +412,8 @@ body section:nth-of-type(4) h3 {
   align-items: center;
   width: 10em;
   text-align: center;
-  font-size: 20px;
-  font-family: 'sofiapro-light', sans-serif;
+  font-size: 1.2em;
+  font-family: var(--main-font);
   font-weight: lighter;
 }
 
@@ -437,51 +432,49 @@ body section:nth-of-type(5) h3 {
   align-items: center;
   width: 10em;
   text-align: center;
-  font-size: 20px;
-  font-family: 'sofiapro-light', sans-serif;
+  font-size: 1.2em;
+  font-family: var(--main-font);
   font-weight: lighter;
 }
 
 body section:nth-of-type(6) {
   background-color: #F2F2F2;
-  height: 350px;
+  height: 23em;
   align-items: center;
   text-align: center;
 }
 
 body section:nth-of-type(6) h2 {
-  font-size: 22px;
+  font-size: 1.6em;
   align-items: center;
   text-align: center;
-  margin: 10px 20px;
-
+  margin: 0.5em 1em;
 }
 
 body section:nth-of-type(6) form input[type=text],
 select {
-  padding: 10px 10px;
-  margin: 8px 0;
+  padding: 0.5em;
+  margin: 0.4em 0;
   display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 0.08em solid #ccc;
+  border-radius: 0.2em;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 1.2em;
 }
 
 body section:nth-of-type(6) a {
   background-color: var(--main-color);
-  font-size: 18px;
+  font-size: 1.2em;
   color: white;
   padding: 0.5em 1em;
   border-radius: 0.2em;
   text-decoration: none;
   margin: 0.2em 1em;
-  font-family: 'sofiapro', sans-serif;
-  left: 80px;
+  font-family: var(--main-font);
 }
 
 body section:nth-of-type(7) {
-  padding: 20px;
+  padding: 1em;
 }
 
 body section:nth-of-type(7) a:nth-child(2) {
@@ -498,13 +491,13 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'sofiapro', sans-serif;
+  font-family: var(--main-font);
   background-color: #D0D0D0;
 }
 
 footer h2 {
-  font-size: 22px;
-  font-family: 'sofiapro', sans-serif;
+  font-size: 1.5em;
+  font-family: var(--main-font);
   text-align: center;
   width: 5em;
 }
@@ -514,16 +507,16 @@ footer address {
   align-items: center;
   width: 10em;
   text-align: center;
-  font-size: 17px;
+  font-size: 1em;
   line-height: 1.5em;
 }
 
 footer ul li a {
   text-align: center;
   width: 6em;
-  font-size: 17px;
+  font-size: 1em;
   line-height: 1.5em;
-  margin: 10px;
+  margin: 0.5em;
   text-align: center;
   text-decoration: none;
   color: var(--secondary-color);
@@ -540,7 +533,7 @@ footer li {
   align-items: center;
   width: 10em;
   text-align: center;
-  font-size: 17px;
+  font-size: 1em;
   line-height: 1.5em;
 }
 
@@ -548,24 +541,24 @@ footer li {
 /*stijling pagina 2*/
 body article {
   text-align: center;
-  font-family: 'sofiapro', sans-serif;
+  font-family: var(--main-font);
 }
 
 body article figure h2 {
-  font-size: 28px;
+  font-size: 2em;
   text-align: left;
   width: 5em;
 }
 
 body article figure p {
-  font-size: 18px;
+  font-size: 1em;
   line-height: 1.5em;
   text-align: left;
 }
 
 body article figure a {
   background-color: #4bb96d;
-  font-size: 18px;
+  font-size: 1em;
   color: white;
   padding: 0.5em;
   border-radius: 0.2em;
@@ -584,92 +577,85 @@ body article:first-child {
 body article:first-child figure a {
   background-color: rgba(0, 0, 0, 0.5);
   font-weight: lighter;
-  font-size: 20px;
-  left: 20px;
-  top: -5px;
+  font-size: 1.2em;
+  left: 1.2em;
+  top: 0.5em;
   border-radius: 0.1em;
   display: block;
 }
 
 body article:first-child figure h1 {
-  font-size: 30px;
+  font-size: 2em;
   color: white;
-  left: 25px;
-  bottom: 5px;
 }
 
 body article:nth-child(2) figure h3 {
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 1.2em;
+  line-height: 1.3em;
   text-align: center;
-}
-
-body article:nth-child(2) img {
-  height: 120px;
-  margin: 33px 0 30px;
 }
 
 body article:nth-child(3) img {
   height: 15vh;
-  padding: 5px;
-  margin: 53px 0 40px;
+  padding: 0.1em;
+  margin: 1em 0;
 }
 
 body article:nth-child(4) img {
   height: 19vh;
-  margin: 33px 0 30px;
+  margin: 1em 0;
 }
 
 body article:nth-child(5) h3 {
-  font-size: 20px;
-  margin: 0 0 17px;
-  margin-top: 40px;
+  font-size: 1.2em;
+  margin: 0 0 1em;
+  margin-top: 2em;
 }
 
 body article:nth-child(5) img {
   height: 25vh;
-  margin: 33px 0 30px;
+  margin: 1em 0 1em;
 }
 
 body article:nth-child(6) img {
   height: 18vh;
-  margin: 33px 0 30px;
+  margin: 1em 0 1em;
 }
 
 body article:nth-of-type(8) {
   display: block;
   background-color: #F2F2F2;
-  height: 360px;
-  margin: 20px 0;
+  height: 22em;
+  margin: 1em 0;
 }
 
 body article:nth-of-type(8) h2 {
-  font-size: 22px;
-  margin: 10px 20px;
-  padding: 30px 0 0;
+  font-size: 1.5em;
+  margin: 0.5em;
+  padding: 0.5em;
 }
 
 body article:nth-of-type(8) form input[type=text],
 select {
-  padding: 10px 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 0.5em;
+  border: 0.1em solid #ccc;
+  border-radius: 0.2em;
   box-sizing: border-box;
-  font-size: 18px;
-  margin-top: 25px;
+  font-size: 1.1em;
+  margin-top: 1.2em;
   width: 50%;
 }
 
 body article:nth-of-type(8) a {
   background-color: var(--main-color);
-  font-size: 18px;
+  font-size: 1em;
   color: white;
   padding: 0.5em 1em;
   border-radius: 0.2em;
   text-decoration: none;
-  font-family: 'sofiapro', sans-serif;
+  font-family: var(--main-font);
   display: inline-block;
-  margin: 0.5em;
+  margin: 1em;
 }
 
 body iframe {
@@ -681,15 +667,13 @@ body iframe {
 /*dark-mode button*/
 .dark-mode nav ul li:nth-child(5) button {
   color: var(--secondary-color);
-  background-color: white;
+  background: var(--background-color);
   border: none;
-  font-family: 'sofiapro', sans-serif;
-  padding: 10px;
-  border-radius: 50px;
+  font-family: var(--main-font);
 }
 
 .dark-mode .navbar {
-  box-shadow: 0px 5px 10px 0px #aaa;
+  box-shadow: 0em 0.2em 0.5em 0em #aaa;
   width: 100%;
   background: var(--secondary-color);
   color: #fff;
@@ -697,23 +681,13 @@ body iframe {
   z-index: 100;
 }
 
-.dark-mode .navbar-container .hamburger-lines button {
+.dark-mode .navbar-container .hamburger-lines a {
   background-color: var(--secondary-color);
   border: none;
 }
 
 .dark-mode .navbar .menu-items {
-  padding-top: 100px;
   background: var(--secondary-color);
-  max-width: 300px;
-  transform: translate(-150%);
-  display: flex;
-  flex-direction: column;
-  margin-left: -38px;
-  padding-left: 40px;
-  transition: transform 0.5s ease-in-out;
-  box-shadow: 5px 0px 10px 0px #aaa;
-  overflow: scroll;
 }
 
 .dark-mode {
@@ -748,28 +722,28 @@ body iframe {
   align-items: center;
   width: 10em;
   text-align: center;
-  font-size: 20px;
-  font-family: 'sofiapro-light', sans-serif;
+  font-size: 1.3em;
+  font-family: var(--main-font);
   font-weight: lighter;
 }
 
 .dark-mode section:nth-of-type(2) a {
   color: var(--main-color);
   font-weight: bold;
-  border: 2px solid var(--main-color);
+  border: 0.08em solid var(--main-color);
   background-color: var(--secondary-color);
 }
 
 .dark-mode section:nth-of-type(3) a {
   color: var(--main-color);
   font-weight: bold;
-  border: 2px solid var(--main-color);
+  border: 0.08em solid var(--main-color);
   background-color: var(--secondary-color);
 }
 
 .dark-mode section:nth-of-type(6) {
   background-color: #787878;
-  height: 350px;
+  height: 23em;
   align-items: center;
   text-align: center;
 }
@@ -777,7 +751,7 @@ body iframe {
 .dark-mode article:nth-of-type(8) {
   display: block;
   background-color: #787878;
-  height: 360px;
+  height: 23em;
   margin: 0%;
 
 }
@@ -787,22 +761,22 @@ body iframe {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'sofiapro', sans-serif;
+  font-family: var(--main-font);
   background-color: var(--secondary-color);
   color: white;
 }
 
 .dark-mode section:nth-of-type(7) {
   background-color: var(--secondary-color);
-  padding: 20px;
+  padding: 1.2em;
 }
 
 .dark-mode article {
   text-align: center;
-  font-family: 'sofiapro', sans-serif;
+  font-family: var(--main-font);
   background-color: var(--secondary-color);
   color: white;
-  padding: 10px;
+  padding: 0.5em;
 }
 
 
@@ -810,7 +784,7 @@ body iframe {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 1.2em;
 }
 
 .dark-mode section {
@@ -818,15 +792,15 @@ body iframe {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'sofiapro', sans-serif;
+  font-family: var(--main-font);
   background-color: var(--secondary-color);
   color: white;
-  padding: 20px;
+  padding: 1.2em;
 }
 
 .dark-mode article:nth-of-type(8) {
   display: block;
   background-color: #787878;
-  height: 370px;
+  height: 23em;
   margin: 0%;
 }

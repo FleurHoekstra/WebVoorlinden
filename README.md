@@ -188,12 +188,26 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Eindgesprek feedback:
+- Hamburger menu is 1 button, met evt 3 spannetjes voor de streepjes, nu is deze nogsteeds niet tab-baar (die input is fancy hoor, maar laat dat lekker achterwege)
+- transform: translate(-50, -50)
+- Footer heeft geen linkjes nog
+- Micro-interactie met javascript moet nu gestyled worden
+CSS variabelen
+- Pixels en EMs door elkaar
+- Gebruik VW/VH units als je een background-image een ruimte wil laten innemen. Height: 200px is niet sexy.
+
+Tussendoor gesprek:
+- input uit de nav in de header.
+- Input op toetsenbord, moet kunnen openklappen met 'tab'.
+- Meer variabelen met :root.
+- px vervangen door em.
 
 ### Screenshot(s)
-
-hier screenshot(s) van je eindresultaat
-
+<img src="images/1.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/2.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/3.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/4.png" width="375px" alt="breakdown van een dynamisch deel">
 </details>
 
 
@@ -207,8 +221,13 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+- https://cmd.camp/html-css-les-6-uitlijnen/
+- https://www.w3schools.com/howto/howto_js_slideshow.asp
+- https://www.w3schools.com/css/tryit.asp?filename=trycss_forms
+- https://codeconvey.com/css-background-image-slider/
+- https://www.youtube.com/watch?v=FWQir0ZfAJI
+- https://player.vimeo.com/video/481283162?h=1821acca4e&app_id=122963
+- https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
+- https://codepen.io/sanketbodke/pen/LYyzzYb?editors=1100
 
 </details>
